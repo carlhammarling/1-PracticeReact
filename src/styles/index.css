@@ -114,11 +114,16 @@ main .oneBook h4 {
 main .oneBook .clickDescription {
   opacity: 0.5;
 }
-main .oneBook p, main .oneBook .bookDescription {
+main .oneBook p {
   transition: ease-in-out 0.5s;
 }
 main .oneBook .off {
   opacity: 0;
+}
+main .oneBook .bookDescription {
+  position: relative;
+  top: -40px;
+  margin-inline: 1rem;
 }
 main .oneBook .bookDescription.on {
   max-height: 1000px;

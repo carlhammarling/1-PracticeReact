@@ -17,18 +17,24 @@
             font-weight: 500;
         }
 
+
         .clickDescription {
             opacity: .5;
         }
 
-        p, .bookDescription {
+        p {
             transition: ease-in-out .5s;
         }
 
         .off {
             opacity: 0;
         }
-        .bookDescription.on {
+        .bookDescription {
+            position: relative;
+            top: -40px;
+            margin-inline: 1rem;
+        }
+        .bookDescription.on {           
             max-height: 1000px;
         }
 
@@ -43,7 +49,6 @@
         width: 60%;
         opacity: .7;
         transition: ease-in-out .2s;
-
         &:hover {
             opacity: 1;
             scale: 1.01;
