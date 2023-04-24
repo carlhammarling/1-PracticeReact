@@ -2,11 +2,6 @@ import { useState } from 'react'
 
 const Hero = ({setShowBooks}) => {
 
-  // const clickHandler = () => {
-
-  //   console.log('You just clicked the button')
-
-  // }
   return (
     <div className='hero'>
         <h2>Welcome! </h2>

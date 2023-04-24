@@ -1,3 +1,4 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 * {
   margin: 0;
   padding: 0;
@@ -112,6 +113,18 @@ main .oneBook h4 {
 }
 main .oneBook .clickDescription {
   opacity: 0.5;
+}
+main .oneBook p, main .oneBook .bookDescription {
+  transition: ease-in-out 0.5s;
+}
+main .oneBook .off {
+  opacity: 0;
+}
+main .oneBook .bookDescription.on {
+  max-height: 1000px;
+}
+main .oneBook .bookDescription.off {
+  max-height: 0px;
 }
 main .oneBook img {
   width: 60%;

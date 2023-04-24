@@ -3,7 +3,6 @@ import OneBook from './OneBook'
 
 const BooksList = ({ booksList, showBooks }) => {
 
-    console.log(booksList)
 
   return (
     <div className={`booksList ${showBooks ? "on" : "off"}`}>

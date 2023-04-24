@@ -21,6 +21,22 @@
             opacity: .5;
         }
 
+        p, .bookDescription {
+            transition: ease-in-out .5s;
+        }
+
+        .off {
+            opacity: 0;
+        }
+        .bookDescription.on {
+            max-height: 1000px;
+        }
+
+        .bookDescription.off {
+            max-height: 0px;
+
+        }
+
     }
 
     .oneBook img {
