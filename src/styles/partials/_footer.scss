@@ -1,0 +1,22 @@
+@mixin footer {
+    background-color: $medGray;
+    padding: .5rem;
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        li {
+            margin-inline: 1rem;
+
+            a {
+                color: #242424;
+                text-decoration: none;
+
+                &:hover {
+                    transition: .2s;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}

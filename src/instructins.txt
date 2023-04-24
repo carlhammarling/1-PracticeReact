@@ -1,0 +1,8 @@
+Fortsätt på sidan du gjorde i övningsuppgift 1 och lägg till en komponent som listar upp dina bästa böcker / filmer
+
+
+
+
+
+
+Du behöver inte ha någon logik eller fylla i något användarnamn om du inte vill det, utan ändra på ett state bara från false till true och visa innehåll dynamiskt utifrån det.

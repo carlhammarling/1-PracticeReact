@@ -1,0 +1,33 @@
+@mixin oneBook {
+    .oneBook {
+        position: relative;
+        background-color: white;
+        max-width: 500px;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+        > * {
+            margin-bottom: 1rem;
+        }
+
+        h4{
+            font-weight: 500;
+        }
+
+        .clickDescription {
+            opacity: .5;
+        }
+
+    }
+
+    .oneBook img {
+        width: 60%;
+        opacity: .7;
+        transition: ease-in-out .2s;
+
+        &:hover {
+            opacity: 1;
+            scale: 1.01;
+        }
+    }
+}

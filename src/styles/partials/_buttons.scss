@@ -1,0 +1,21 @@
+@mixin buttons {
+    .btn-primary {
+        padding: 1rem;
+        background-color: $coolGreen;
+        color: white;
+        border: 0;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        border-radius: .3rem;
+        transition: ease-in-out .2s;
+        cursor: pointer;
+
+        &:hover {
+            
+            scale: .99;
+            opacity: .95;
+        }
+    }
+    
+}

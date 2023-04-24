@@ -1,0 +1,52 @@
+@import "./partials/variables";
+@import "./partials/buttons";
+@import "./partials/navbar";
+@import "./partials/footer";
+@import "./partials/hero";
+@import "./partials/booksList";
+@import "./partials/oneBook";
+
+
+* {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @include buttons;
+
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+  }
+  
+nav {
+  @include nav;
+}
+
+main {
+  // To make this part grow and not header/footer
+    flex-grow: 1;
+    display: grid;
+    place-content: center;
+    color: $darkGray;
+  @include hero;
+  @include booksList;
+  @include oneBook;
+}
+
+footer {
+  @include footer
+}
+
+.hidden {
+  display: none;
+}
+  

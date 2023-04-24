@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .btn-primary {
+  padding: 1rem;
+  background-color: rgb(31, 171, 117);
+  color: white;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 0.3rem;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+* .btn-primary:hover {
+  scale: 0.99;
+  opacity: 0.95;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: #3d3d3d;
+  padding: 0.5rem;
+}
+nav h1 {
+  margin: 0;
+}
+nav p.userLoggedIn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+nav .btn-nav {
+  padding: 0.5rem 1rem;
+  background-color: #3d3d3d;
+  color: white;
+  border: 1px solid white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+nav .btn-nav:hover {
+  background-color: white;
+  border: 1px solid #3d3d3d;
+  color: #3d3d3d;
+}
+
+main {
+  flex-grow: 1;
+  display: grid;
+  place-content: center;
+  color: #3d3d3d;
+}
+main .hero {
+  margin-top: 4rem;
+  max-width: 500px;
+  text-align: center;
+  margin-inline: 1rem;
+}
+main .hero > * {
+  margin-bottom: 1rem;
+}
+main .booksList {
+  background-color: rgb(243, 241, 241);
+}
+main .oneBook {
+  position: relative;
+  background-color: white;
+  max-width: 500px;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+main .oneBook > * {
+  margin-bottom: 1rem;
+}
+main .oneBook h4 {
+  font-weight: 500;
+}
+main .oneBook .clickDescription {
+  opacity: 0.5;
+}
+main .oneBook img {
+  width: 60%;
+  opacity: 0.7;
+  transition: ease-in-out 0.2s;
+}
+main .oneBook img:hover {
+  opacity: 1;
+  scale: 1.01;
+}
+
+footer {
+  background-color: #eaeaea;
+  padding: 0.5rem;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer ul li {
+  margin-inline: 1rem;
+}
+footer ul li a {
+  color: #242424;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  transition: 0.2s;
+  opacity: 0.7;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
