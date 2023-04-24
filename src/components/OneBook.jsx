@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const OneBook = ( { book }) => {
+const OneBook = ( { book, showBooks }) => {
 
     console.log(book)
 
@@ -8,7 +8,7 @@ const OneBook = ( { book }) => {
     const [showDescription, setShowDescription] = useState(false)
 
   return (
-    <div className='oneBook' onClick={() => setShowDescription(state => !state)} >
+    <div className={`oneBook ${showBooks ? "on" : "off"}`} onClick={() => setShowDescription(state => !state)} >
         <h3> {book.book} </h3>
         <h4> {book.author} </h4>
         {

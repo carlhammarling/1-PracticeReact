@@ -6,6 +6,9 @@
         text-align: center;
         padding: 1rem;
         margin: 1rem;
+        overflow: hidden;
+        transition: ease-in-out .5s;
+
         > * {
             margin-bottom: 1rem;
         }
@@ -29,5 +32,12 @@
             opacity: 1;
             scale: 1.01;
         }
+    }
+    .oneBook.on {
+        max-height:1000px;
+    }
+
+    .oneBook.off{
+        max-height: 0px;
     }
 }

@@ -67,8 +67,9 @@ nav .btn-nav:hover {
 
 main {
   flex-grow: 1;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #3d3d3d;
 }
 main .hero {
@@ -82,6 +83,16 @@ main .hero > * {
 }
 main .booksList {
   background-color: rgb(243, 241, 241);
+  opacity: 0;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+}
+main .booksList.on {
+  opacity: 1;
+  max-height: 10000px;
+}
+main .booksList.off {
+  max-height: 0px;
 }
 main .oneBook {
   position: relative;
@@ -90,6 +101,8 @@ main .oneBook {
   text-align: center;
   padding: 1rem;
   margin: 1rem;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
 }
 main .oneBook > * {
   margin-bottom: 1rem;
@@ -108,6 +121,12 @@ main .oneBook img {
 main .oneBook img:hover {
   opacity: 1;
   scale: 1.01;
+}
+main .oneBook.on {
+  max-height: 1000px;
+}
+main .oneBook.off {
+  max-height: 0px;
 }
 
 footer {

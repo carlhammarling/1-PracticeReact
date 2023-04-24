@@ -44,12 +44,14 @@ const App = () => {
     },
   ])
 
+  const [showBooks, setShowBooks] = useState(false)
+
   return (
     <div className='wrapper'>
       <Navbar />
       <main>
-        <Hero />
-        <BooksList booksList={booksList} />
+        <Hero setShowBooks={setShowBooks} />
+        <BooksList showBooks = {showBooks} booksList={booksList} />
       </main>     
       <Footer />
     </div>

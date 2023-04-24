@@ -5,6 +5,7 @@
 @import "./partials/hero";
 @import "./partials/booksList";
 @import "./partials/oneBook";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
 * {
@@ -34,8 +35,9 @@ nav {
 main {
   // To make this part grow and not header/footer
     flex-grow: 1;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: $darkGray;
   @include hero;
   @include booksList;

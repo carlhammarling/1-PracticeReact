@@ -1,7 +1,19 @@
 @mixin booksList {
 
     .booksList {
-        background-color: rgb(243, 241, 241);   
+        background-color: rgb(243, 241, 241); 
+        opacity: 0; 
+        overflow: hidden;  
+        transition: ease-in-out .5s;
         // padding-inline: 1rem;   
+    }
+    .booksList.on {
+        opacity: 1;
+        max-height: 10000px;
+        
+    }
+
+    .booksList.off{
+        max-height: 0px;
     }
 }
